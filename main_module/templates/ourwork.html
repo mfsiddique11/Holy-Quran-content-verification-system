@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html  lang="en">
+<head>
+  <title>Quran</title>
+  {% load staticfiles %}
+  <script src='https://code.jquery.com/jquery-3.3.1.min.js' type='text/javascript'></script>
+  <link rel='stylesheet' href='{% static "css/bootstrap.min.css" %}' type='text/css'/>
+
+  <style type='text/css'>
+
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="/"><b style='color:#22A5AD'>Home</b> <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="/about"><b style='color:black'>About</b></a>
+      </div>
+    </div>
+  </nav>
+  <hr>
+  <div style="padding-left:50px">
+
+    <div class="row">
+      <div class="col-2">
+        <p ><b>About This Website</b></p>
+
+
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a class="" href="/about"><b style='color:#22A5AD'>What is Holy Quran</b></a></li>
+          <li class="list-group-item"><a class="" href="/ourwork"><b style='color:black'>Our Work</b></a></li>
+          <li class="list-group-item"><a class="" href="/references"><b style='color:#22A5AD'>Reference</b></a></li>
+          <li class="list-group-item"><a class="" href="/developers"><b style='color:#22A5AD'>Developers</b></a></li>
+        </ul>
+      </div>
+      <div class="col-8">
+
+        <h1>Our Work</h1>
+
+        <p class="lead">
+          Currently there is no system that can verify the content of Holy Quran accurately.The system that currently exists verifies ayats without rasmul-khat and use a technique of exact analysis.
+          <br>
+          In this system,there are three ways a user can verify an ayah or a part of ayah using:<br>
+          <ul ><p  style='color:#22A5AD'><b > Audio</b></p>
+            <div style='padding-left:50px'>   <li >The user have to speak or upload an audio file which will be recognized via <a href="https://pypi.org/project/SpeechRecognition/"><b> python library(Google Speech Recognition)</b></a> to verify the content.</li></div>
+          </ul>
+          <ul ><p  style='color:#22A5AD'><b > Image</b></p>
+            <div style='padding-left:50px'>   <li >The user have to upload an image file which will be recognized via <a href="https://pypi.org/project/tesserocr/"><b>python library (TesseractOCR)</b></a> to verify the content.</li></div>
+          </ul>
+          <ul ><p  style='color:#22A5AD'><b > Text</b></p>
+            <div style='padding-left:50px'>   <li >The user will have to paste an Arabic text(with or without tashkeel) or type(without taskeel) through a keyboard attached to the search bar.  </li></div>
+          </ul>
+          <ul ><p  style='color:#22A5AD'><b > Wrong Input Correction</b></p>
+            <div style='padding-left:50px'>   <li > Also if the input is wrong,it will be corrected via <a href="https://pypi.org/project/fuzzywuzzy/0.3.0/"><b>python library (Fuzzy Wuzzy).</b></a>
+            </li></div>
+          </ul>
+
+          <ul ><p  style='color:#22A5AD'><b > Algorithms for Searching and display</b></p>
+            <div style='padding-left:50px'>   <li >A <a href="#"><b>String Matching algorithm</b></a> is used for searching the input in database and A <a href="#"><b>priority Based algorithm</b></a> is being used in this system to display the result for best matches. </li></div>
+          </ul>
+        </p>
+
+
+
+
+      </div>
+      <div class="col-3">
+
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer font-small blue pt-4" style="background-color:#32312C;height:150px">
+
+
+    <div class="footer-copyright text-center py-3"><i style="color:white">© 2018 quranverifier.com<br>ALL RIGHTS RESERVED.</i>
+    </div>
+  </footer>
+
+</body>
+</html>
